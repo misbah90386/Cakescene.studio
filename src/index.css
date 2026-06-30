@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  
+  --color-luxury-cream: #fdfaf5;
+  --color-luxury-blush: #fcf1f3;
+  --color-luxury-champagne: #fcf9f5;
+  --color-luxury-gold: #d4af37;
+  --color-luxury-gold-hover: #b59124;
+  --color-luxury-charcoal: #3e2723;
+  --color-luxury-mocha: #5d3a31;
+  --color-luxury-peach: #fbcfe8;
+}
+
+/* Custom global styles for scrollbars and luxury theme */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-luxury-cream);
+  color: var(--color-luxury-charcoal);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-luxury-cream);
+}
+::-webkit-scrollbar-thumb {
+  background: #E5DDD5;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-luxury-gold);
+}
